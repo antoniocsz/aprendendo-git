@@ -1,8 +1,10 @@
 # -*- encoding:utf-8 -*-
 from flask import Blueprint
+from flask import render_template
 
 frontend = Blueprint('frontend',__name__)
 
 @frontend.route('/')
+@frontend.route('/index')
 def index():
-    return "<strong style='color:red; text-align:center'><h1>Olá,</h1></strong><br><br>Quem é o menino da vila?<br><br><br>R: Neymar!"
+	return render_template('index.html',)
