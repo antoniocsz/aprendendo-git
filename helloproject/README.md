@@ -6,7 +6,7 @@ Primeiro é necessário fazer a instalação do vitualenv para criar um ambiente
 $ sudo pip install virtualenv
 ```
 
-Após a instalação virtualenv, crie o ambiente e ative-o: 
+Após a instalação virtualenv, crie o ambiente e ative-o:
 
 ``` sh
 $ virtualenv nome_do_seu_ambiente
@@ -22,7 +22,7 @@ Depois de ativar o ambiente instale o Flask e o Flask Action:
 
 ``` sh
 $ pip install Flask
-$ pip install Flask-Action 
+$ pip install Flask-Action
 ```
 
 Para criar um projeto com Flask Action faça:
@@ -49,5 +49,5 @@ nome_do_projeto/
 ```
 Para executar:
 ``` sh
-$ manage.py runserver
+$ python manage.py runserver
 ```
