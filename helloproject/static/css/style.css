@@ -1,18 +1,38 @@
-.formulario form{
-	width: 300px;
-	height: 200px;
-	background-color: rgba(2,55,3, .6);
-	padding: 20px;
-	border-radius: 15px;
-	box-shadow: 1px 1px 5px;
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Heveltica, Arial, sans-serif;
+	color: #444;
 }
 
-.formulario label{
+header .container{
+	width: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	margin: 0 0 10px;
+}
+header .container h1{
+	padding: 10px;
+	font-size: 18pt;
 	color: white;
-	font-weight: bold;
-	margin-right: 8px;
 }
 
-.formulario input{
-	border-radius: 5px;
+/* Formulario */
+form, h2{
+	margin: 0 40%;
+}
+form label{
+	display: block;
+	font-size: 1.2em;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+form input#username,
+form input#password{
+	width: 300px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	padding: 5px;
+	font-size: 1.1em;
+	margin-bottom: 10px;
 }
