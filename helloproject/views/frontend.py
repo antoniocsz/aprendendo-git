@@ -10,7 +10,7 @@ frontend = Blueprint('frontend',__name__)
 @frontend.route('/')
 def home():
     return render_template('home.html')
-    
+
 @frontend.route('/login')
 def login():
     form = Formulario()
