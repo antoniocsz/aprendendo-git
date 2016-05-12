@@ -1,11 +1,8 @@
 # -*- encoding:utf-8 -*-
 from flask import Blueprint, render_template, request, url_for
-from forms import Formulario
+import wtforms
 
 frontend = Blueprint('frontend',__name__)
-
-#def index():
-#    return render_template('index.html')
 
 @frontend.route('/')
 def home():
@@ -13,11 +10,18 @@ def home():
 
 @frontend.route('/login')
 def login():
-    form = Formulario()
-    return render_template('login.html', form = form)
+    return render_template('login.html')
 
 @frontend.route('/index', methods=['GET','POST'])
 def index():
-    if method.request == 'POST':
-        return redirect(url_for('index'))
-    return render_template('profile.html')
+    email = 'teste@teste.com'
+    senha = 'teste123'
+    if request.method == 'POST':
+        username = str(request.form['username'])
+        password = str(request.form['password'])
+        print (username, password)
+        if email != username or senha != password:
+            print(True)
+            return 'Erro 404'
+        else:
+            return render_template('index.html')

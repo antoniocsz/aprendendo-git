@@ -1,13 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
     <h2>Formulário</h2>
-    <form action="{{url_for('index')}}" method=post>
-        {{ form.username.label }}
-        {{ form.username }}
-
-        {{ form.password.label }}
-        {{ form.password }}
-
-        {{ form.submit }}
+    <form action="/index" method="post">
+        <label>Email</label><input type="email" name="username"/>
+        <label>Senha</label><input type="password" name="password"/>
+        <input type="submit" value="Enviar"/>
     </form>
 {% endblock %}
