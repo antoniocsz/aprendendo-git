@@ -22,7 +22,7 @@ Depois de ativar o ambiente instale o Flask e o Flask Action:
 
 ``` sh
 $ pip install Flask
-$ pip install Flask-Action
+$ pip install Flask-Actions
 ```
 
 Para criar um projeto com Flask Action faça:
