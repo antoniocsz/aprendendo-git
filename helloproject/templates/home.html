@@ -1,4 +1,92 @@
 {% extends "layout.html" %}
 {% block content %}
+<div id="page">
+    <section id="principal">
+        <h2>Sobre:</h2>
+        <article id="curriculo-academico">
+            <h3>Curriculo Acadêmico</h3>
+            <ul>
+                <li>Graduando</li>
+                <li>Bacharelado em Ciência da Computação</li>
+                <li>Universidade Federal da Bahia</li>
+                <li>2012 ~ Ao infinito e além</li>
+            </ul>
+        </article>
 
+        <article id="experiencias-profissionais">
+            <h3>Experiências Profissionais</h3>
+            <ul>
+                <li>Serviço de Atendimento ao Cidadão - SAC</li>
+                <li>Outrubro/2012 - Setembro/2014</li>
+                <li>Auxiliar Administrativo</li>
+                <li>SSP/BA</li>
+            </ul>
+            <ul>
+                <li>Defensoria Publica do Estado - DPE</li>
+                <li>Abril/2014 - Setembro/2015</li>
+                <li>Suporte Tecnico</li>
+                <li>CMO</li>
+            </ul>
+
+            <ul>
+                <li>Superintendencia de Tecnologia da Informação - STI</li>
+                <li>Outrubro/2015 - Até o momento</li>
+                <li>Desenvolvedor</li>
+                <li>GERE</li>
+            </ul>
+        </article>
+
+        <article id="linguagens">
+            <h3>Conhecimentos</h3>
+            <ul>
+                <li>Python / Flask</li>
+                <li>Git/GitHub</li>
+                <li>MarkDown</li>
+                <li>JavaScript / JQuery</li>
+                <li>HTML5 / CSS3 / SASS</li>
+                <li>BootStrap</li>
+                <li>JSON / XML</li>
+            </ul>
+        </article>
+    </section>
+    <section id="quem-sou-eu">
+        <h2>Quem sou?</h2>
+        <figure>
+            <img src="{{url_for('static', filename = 'img/tonho.jpg')}}" alt="foto de antonio" />
+        </figure>
+
+        <h3>Antonio Santana</h3>
+        <h3>23 anos</h3>
+        <h3>Solteiro</h3>
+
+        <p>Sou um cara simples que tenta se dar bem com o maior numero de pessoas possiveis. Gosto muito de sair com os amigos no final de semana, mas quando estou em casa adoro maratonar aquele anime, serie, filmes.
+
+            No tempo livre passo boa parte lendo algo sobre tecnologia e acabo virando noites com esses tipos de coisas, sem falar que sou torcedor apaixonado pelo melhor time do norte-nordeste o BAHIA. #BBMP
+
+            Em relação a religião me considero ateu, e não suporto entrar em discussões sobre religião pois acredito que este tipo de conversa não leva a lugar nenhum.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <form>
+                <label>Nome</label>
+                <br>
+                <input type="text" name="Nome">
+                <br><br>
+                <label>Email</label>
+                <br>
+                <input type="email" name="Email">
+                <br><br>
+                <label>Assunto</label>
+                <br>
+                <input type="text" name="Assunto">
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Antonio Santana<br>
+                Sexta, 20 de Junho de 2016</p>
+            </footer>
+</div>
 {% endblock %}

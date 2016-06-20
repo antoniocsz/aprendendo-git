@@ -38,9 +38,7 @@ nome_do_projeto/
             layout.html
         views
             frontend.py
-            frontend.pyc
             __init__.py
-            __init__.pyc
     manage.py
     settings.py
 ```
