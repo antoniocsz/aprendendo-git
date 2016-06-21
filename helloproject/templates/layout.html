@@ -6,16 +6,17 @@
       <link rel='stylesheet' href="{{url_for('static', filename = 'css/style.css')}}">
   </head>
   <body class="body">
-    <header>
+    <header class="cabecalho">
         <nav>
             <ul class="menu">
-                <li class="esquerda"><a class="botaos" href="#body">DevCaffeine</a></li>
+                <li class="esquerda"><a class="botaos" href="#cabecalho">DevCaffeine</a></li>
                 <li class="direita"><a class="botaos" href="#fale-conosco">Entre em Contato</a></li>
                 <li class="direita"><a
                 class="botaos" href="#curriculo">Experiências</a></li>
                 <li class="direita"><a class="botaos" href="#quem-sou-eu">Sobre</a></li>
             </ul>
         </nav>
+        <h1 class="logo">DevCaffeine</h1>
     </header>
     <div class="container">
       {% block content %}
