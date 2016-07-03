@@ -2,95 +2,138 @@
 {% block title %}Inicio{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="jumbotron">
-        <h1>DevCaffeine</h1>
-        <p>O café é a bebida considerada o melhor amigo dos profissionais de TI.</p>
-    </div>
-</div>
-<div class="row">
-    <figure class="col-sm-2 col-sm-offset-1">
-        <img class="img-thumbnail pull-right" src="{{url_for('static', filename = 'img/tonho.jpg')}}" alt="Minha Foto"/>
-    </figure>
-    <div class="col-sm-8">
-        <h5 class="importantes">Antonio Santana</h5>
-        <h5 class="importantes">23 anos</h5>
-        <h5 class="importantes">Solteiro</h5>
-        <p class="text-justify">
-            Sou um cara simples que tenta se dar bem com o maior numero de pessoas possiveis. Gosto muito de sair com os amigos no final de semana, mas quando estou em casa adoro maratonar aquele anime, serie, filmes.
-
-            No tempo livre passo boa parte lendo algo sobre tecnologia e acabo virando noites com esses tipos de coisas, sem falar que sou torcedor apaixonado pelo melhor time do norte-nordeste o BAHIA. #BBMP
-
-            Em relação a religião me considero ateu, e não suporto entrar em discussões sobre religião pois acredito que este tipo de conversa não leva a lugar nenhum.
-        </p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-6 bloco-1">
-        <div class="text-center">
-            <h3>Curriculo Acadêmico</h3>
-            <ul class="list-unstyled">
-                <li>Graduando em Ciência da Computação</li>
-                <li>Universidade Federal da Bahia</li>
-                <li>2012 - 2018</li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-sm-6 bloco-1">
-        <div class="text-center">
-            <h3>Conhecimentos</h3>
-            <ul class="list-inline">
-                <li>Python, Java, JavaScript, HTML5, CSS3, MarkDown, Git</li>
-                <li>GitHub, Bootstrap, Flask, SASS, JQuery, JSON, XML</li>
-            </ul>
+    <div class="nav navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <i class="fa fa-align-justify"></i>
+                </button>
+                <a href="#" class="navbar-brand">DevCaffeine <i class="fa fa-coffee fa-pull-left"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id='myNavbar'>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#section-2">Sobre</a></li>
+                    <li><a href="#section-3">Conhecimentos</a></li>
+                    <li><a href="#section-4">Experiências</a></li>
+                    <li><a href="#section-5">Contato</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
-<div class="table-responsive bloco-2">
-    <table class="table table-hover table-bordered">
-        <caption class="text-center">Experiências Profissionais</caption>
-        <thead>
-            <tr>
-                <th>Empresa</th>
-                <th>Periodo</th>
-                <th>Função</th>
-                <th>Setor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Serviço de Atendimento ao Cidadão - SAC</td>
-                <td>10/2012 - 09/2014</td>
-                <td>Auxiliar Administrativo</td>
-                <td>SSP/BA</td>
-            </tr>
-            <tr>
-                <td>Defensoria Publica do Estado - DPE</td>
-                <td>04/2014 - 09/2015</td>
-                <td>Suporte Tecnico</td>
-                <td>CMO</td>
-            </tr>
-            <tr>
-                <td>Superintendencia de Tecnologia da Informação - STI</td>
-                <td>10/2015 - 07/2016</td>
-                <td>Desenvolvedor</td>
-                <td>GERE</td>
-            </tr>
-        </tbody>
-    </table>
+<section id="section-1">
+    <div class="row">
+        <div class="jumbotron bloco-0">
+            <h1>DevCaffeine<i class="fa fa-coffee fa-pull-left"></i></h1>
+            <p>O café é a bebida considerada o melhor amigo dos profissionais de TI.</p>
+        </div>
+    </div>
+</section>
+<div class="container-fluid">
+    <section id="section-2">
+        <div class="row">
+            <div class="col-sm-12 bloco-1">
+                <figure class="col-sm-2 col-sm-offset-1">
+                    <img class="img-thumbnail pull-right" src="{{url_for('static', filename = 'img/tonho.jpg')}}" alt="Minha Foto"/>
+                </figure>
+                <div class="col-sm-8">
+                    <h5 class="importantes">Antonio Santana</h5>
+                    <h5 class="importantes">23 anos</h5>
+                    <h5 class="importantes">Solteiro</h5>
+                    <p class="text-justify">
+                        Sou um cara simples que tenta se dar bem com o maior numero de pessoas possiveis. Gosto muito de sair com os amigos no final de semana, mas quando estou em casa adoro maratonar aquele anime, serie, filmes.
+
+                        No tempo livre passo boa parte lendo algo sobre tecnologia e acabo virando noites com esses tipos de coisas, sem falar que sou torcedor apaixonado pelo melhor time do norte-nordeste o BAHIA. #BBMP
+
+                        Em relação a religião me considero ateu, e não suporto entrar em discussões sobre religião pois acredito que este tipo de conversa não leva a lugar nenhum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-<form role='form'>
-    <div class="from-group">
-        <label for="nome">Nome:</label>
-        <input type="text" class="form-control" placeholder="Insira o nome">
+<div class="container-fluid">
+<section id="section-3">
+    <div class="row">
+        <div class="col-sm-6 bloco-2">
+            <div class="text-center">
+                <h3>Curriculo Acadêmico <i class="glyphicon glyphicon-education"></i></h3>
+                <ul class="list-unstyled">
+                    <li>Graduando em Ciência da Computação</li>
+                    <li>Universidade Federal da Bahia</li>
+                    <li>2012 - 2018</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 bloco-2">
+            <div class="text-center">
+                <h3>Conhecimentos <i class="fa fa-book"></i></h3>
+                <ul class="list-inline">
+                    <li>Python, Java, JavaScript, HTML5, CSS3, MarkDown, Git</li>
+                    <li>GitHub, Bootstrap, Flask, SASS, JQuery, JSON, XML</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="email" class="form-control" placeholder="Insira o e-mail">
+</section>
+</div>
+<div class="container-fluid">
+<section id="section-4">
+    <div class="table-responsive col-sm-6 col-sm-offset-3 bloco-3">
+        <table class="table table-hover table-bordered">
+            <caption class="text-center lead">Experiências Profissionais</caption>
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Periodo</th>
+                    <th>Função</th>
+                    <th>Setor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Serviço de Atendimento ao Cidadão - SAC</td>
+                    <td>10/2012 - 09/2014</td>
+                    <td>Auxiliar Administrativo</td>
+                    <td>SSP/BA</td>
+                </tr>
+                <tr>
+                    <td>Defensoria Publica do Estado - DPE</td>
+                    <td>04/2014 - 09/2015</td>
+                    <td>Suporte Tecnico</td>
+                    <td>CMO</td>
+                </tr>
+                <tr>
+                    <td>Superintendencia de Tecnologia da Informação - STI</td>
+                    <td>10/2015 - 07/2016</td>
+                    <td>Desenvolvedor</td>
+                    <td>GERE</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="form-group">
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="30" rows="10" class="form-control"></textarea>
-    </div>
-    <button type="submit" class="btn btn-default">Enviar</button>
-</form>
+</section>
+<div>
+<div class="container-fluid">
+<section id="section-5">
+    <form role='form' class="col-sm-4 col-sm-offset-4 bloco-4">
+        <h3 class="importantes titulo">Contato</h3>
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" placeholder="Insira o seu nome">
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" placeholder="Insira o seu e-mail">
+        </div>
+        <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <textarea name="assunto" id="assunto" cols="30" rows="10" class="form-control" placeholder="Insira o assunto."></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Enviar <i class="fa fa-arrow-right"></i></button>
+    </form>
+</section>
+</div>
+<footer>
+</footer>
 {% endblock %}

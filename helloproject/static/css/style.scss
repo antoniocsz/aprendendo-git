@@ -1,47 +1,17 @@
 @charset "UTF-8";
-.body{
-    background-color: rgb(244, 233, 233);
-    max-width: 100%;
+[class *= 'bloco-']{
     max-height: 100%;
-    text-align: center;
-    list-style: none;
+    padding-top: 8%;
+    padding-bottom: 5%;
 }
-// Cabeçalho
-.cabecalho{
-    clear: both;
-    margin: 0;
-    max-width: 100%;
-    height: 43em;
-    background: url('../img/fundo.jpg') no-repeat center fixed;
-    .logo{
-        text-align: center;
-    }
+
+[class *= 'fa-align-justify']{
+    color: white;
 }
-// Menu
-.menu{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: block;
-    background-color: rgb(34, 24, 108);
-    overflow: hidden;
-    .esquerda {
-        float: left;
-        background-color: hsl(129, 42%, 52%);
-    }
-    .direita{
-        float: right;
-    }
-    .esquerda .botaos, .direita .botaos{
-        text-transform: uppercase;
-        text-decoration: none;
-        display: block;
-        padding: 1.2em 0.9em;
-        color: white;
-        font-weight: bolder;
-        text-shadow: 1px 1.1px black;
-    }
-    :hover{
-        background-color: rgb(95, 101, 136);
-    }
+
+.titulo{
+    margin-bottom: 5%;
+}
+.importantes{
+    font-weight: bolder;
 }

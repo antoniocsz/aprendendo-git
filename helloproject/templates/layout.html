@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="DevCaffeiness">
+        <meta name="description" content="Sistema de Gestão de Eventos">
         <link rel="stylesheet" href="{{url_for('static', filename ='css/style.css')}}">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         {% block head %}
-        <title>{% block title %}{% endblock %} - DevCaffeine</title>
+        <title>{% block title %}{% endblock %} - Sistema de Gestão de Eventos</title>
         {% endblock %}
         <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
         <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
@@ -18,7 +19,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy='scroll' data-target='.navbar' data-offset"50">
         <div class="container-fluid">
             {% block content %}
             {% endblock %}
