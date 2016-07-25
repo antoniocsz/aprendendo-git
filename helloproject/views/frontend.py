@@ -1,6 +1,5 @@
 # -*- encoding:utf-8 -*-
 from flask import Blueprint, render_template, request, url_for
-from flask_bootstrap import Bootstrap
 import wtforms
 
 frontend = Blueprint('frontend',__name__)
